@@ -17,7 +17,6 @@ public class Car {
    private int series;
 
    @OneToOne
-//   @JoinColumn(name = "users_id")
    private User user;
 
    public Car() {}

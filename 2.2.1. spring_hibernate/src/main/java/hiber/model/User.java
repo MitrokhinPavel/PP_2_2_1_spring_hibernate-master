@@ -22,6 +22,16 @@ public class User {
    @OneToOne(cascade = CascadeType.ALL, mappedBy = "user")
    private Car car;
 
+   @Override
+   public String toString() {
+      return "User {" +
+              "Id=" + id +
+              ", First Name='" + firstName + '\'' +
+              ", Last Name='" + lastName + '\'' +
+              ", Email='" + email + '\'' +
+              '}';
+   }
+
    public User() {}
    
    public User(String firstName, String lastName, String email) {
